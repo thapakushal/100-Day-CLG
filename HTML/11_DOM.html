@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manipulation</title>
+  </head>
+  <body>
+    <ul>
+      <li>First Element</li>
+      <li>Second Element</li>
+      <li>Third Element</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+          </tr>
+      
+          <tr>
+            <td>Three</td>
+            <td>Four</td>
+          </tr>
+    </table>
+    <script>
+      // // Root NOde
+      // console.log(document.documentElement)
+      // // Elemnt Node body/head tag
+      // console.log(document.body)
+      // console.log(document.head)
+
+      // // Childrens
+      // console.log(document.body.childNodes)
+      // console.log(document.body.children)
+      // for(node of document.body.children){
+      //     console.log(node)
+      // }
+      // console.log(document.body.firstChild)// it shows text as first child becaust it detects white space as text
+      // console.log(document.body.lastChild)
+      // console.log(document.body.firstElementChild)
+      // console.log(document.body.lastElementChild)
+
+      //Array methods
+      // const childrenOfBody = Array.from(document.body.children)
+      // console.log(childrenOfBody)
+
+      // // siblings this code-- not working properly
+      // const ulTag = document.body.childre[0]
+      // const firstLI = ulTag.children[0]
+      // const secondLi = ulTag.children[1]
+      // console.log(secondLI.previousElementSibling.textContent)
+
+      // Table DOM MANIPULATION
+      const tableTag = document.body.children[1]
+      console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue;")
+      
+      
+
+    </script>
+  </body>
+</html>
